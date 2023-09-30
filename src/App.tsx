@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { React } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+// import { FormspreeProvider } from '@formspree/react';
+import { BrowserRouter } from "react-router-dom"
+
+
+// My Components
+import { Navbar } from './components/navigation';
+import MainRouter from './MainRouter'
+
+
+// THEME & Layout Context
+import theme from "./theme"
+import { ThemeProvider } from '@mui/material/styles';
+import { AppContextProvider } from './AppContext';
+import { Box, CssBaseline } from '@mui/material';
+
+
+
+export default function App() {
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <AppContextProvider >
+          {/* <FormspreeProvider project="1960964562039602920" > */}
+          {/* <FormspreeProvider project={process.env.REACT_APP_FORMSPREE_PROJECT_ID} > */}
+            <Box 
+              id='App' 
+              bgcolor='primary.main'
+              height='100vh'
+              width='100vw'
+              // overflowX='hidden'
+              // overflowY='scroll'
+            >
+              <BrowserRouter>
+                <Navbar /> 
+                <MainRouter />
+              </BrowserRouter>
+            </Box>
+          {/* </FormspreeProvider> */}
+        </AppContextProvider>
+      </ThemeProvider>
     </>
   )
 }
 
-export default App
+
