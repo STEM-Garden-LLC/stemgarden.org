@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Typography } from '@mui/material';
 
 import theme from "../../theme";
-import { AppContext } from "../../AppContext";
+import { AppContext } from "../../context/AppContext";
 
 export default function Paragraph(props) {
   const { text } = props

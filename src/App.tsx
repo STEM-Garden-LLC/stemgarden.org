@@ -1,4 +1,4 @@
-import { React } from 'react'
+// import { React } from 'react'
 
 // import { FormspreeProvider } from '@formspree/react';
 import { BrowserRouter } from "react-router-dom"
@@ -12,7 +12,7 @@ import MainRouter from './MainRouter'
 // THEME & Layout Context
 import theme from "./theme"
 import { ThemeProvider } from '@mui/material/styles';
-import { AppContextProvider } from './AppContext';
+import { AppContextProvider } from './context/AppContext';
 import { Box, CssBaseline } from '@mui/material';
 
 

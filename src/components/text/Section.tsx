@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Box } from '@mui/material';
 
 import { Paragraph, PageSubtitle } from "../text";
-import { AppContext } from "../../AppContext";
+import { AppContext } from "../../context/AppContext";
 
 export default function Section(props) {
   const { screenWidth } = useContext(AppContext)

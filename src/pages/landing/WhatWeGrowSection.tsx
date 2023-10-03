@@ -8,7 +8,7 @@ import { PageHeader, PageSubtitle, Paragraph } from "../../components/text";
 import { BackgroundSection } from "../../components/backgrounds";
 // import Footer from '../components/Footer';
 
-import { AppContext } from '../../AppContext';
+import { AppContext } from '../../context/AppContext';
 
 const crops = [
   {

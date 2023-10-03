@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Box, Container } from '@mui/material';
 
-import { AppContext } from "../../AppContext";
+import { AppContext } from "../../context/AppContext";
 import { leafy_background } from "../../cloudinaryURLs";
 
 export default function ScreenHeightSection(props) {

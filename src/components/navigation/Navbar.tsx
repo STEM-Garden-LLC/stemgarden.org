@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AppContext } from "../../AppContext";
+import { AppContext } from "../../context/AppContext";
 
 import { MobileNavbar, DesktopNavbar } from "./index";
 import { Box } from "@mui/material"

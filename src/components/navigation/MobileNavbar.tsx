@@ -9,7 +9,7 @@ import {
   Typography,
   AppBar,
 } from "@mui/material"
-import { AppContext } from '../../AppContext';
+import { AppContext } from '../../context/AppContext';
 
 export default function MobileNavbar() {
   const { navbarHeightPx } = useContext(AppContext)

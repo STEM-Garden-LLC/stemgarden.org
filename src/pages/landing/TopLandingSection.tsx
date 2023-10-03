@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 import { Box, Card, CardMedia } from '@mui/material';
 
 // Custom Components
-import { AppContext } from '../../AppContext';
+import { AppContext } from '../../context/AppContext';
 import { PageTitle, PageSubtitle, CardTitle } from "../../components/text";
 import { BackgroundSection } from "../../components/backgrounds";
 

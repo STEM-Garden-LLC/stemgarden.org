@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Typography } from '@mui/material';
 
-import { AppContext } from "../../AppContext";
+import { AppContext } from "../../context/AppContext";
 
 export default function PageSubtitle(props) {
   const { text, align, gutterBottom } = props

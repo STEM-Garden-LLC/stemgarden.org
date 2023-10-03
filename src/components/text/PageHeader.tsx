@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Box } from '@mui/material';
 
 import { PageTitle, PageSubtitle } from "./";
-import { AppContext } from "../../AppContext";
+import { AppContext } from "../../context/AppContext";
 
 export default function PageHeader(props) {
   const { title, subtitle } = props

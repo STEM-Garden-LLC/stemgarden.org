@@ -11,7 +11,7 @@ import {
 } from "@mui/material"
 
 import theme from '../../theme';
-import { AppContext } from '../../AppContext';
+import { AppContext } from '../../context/AppContext';
 
 export default function DesktopNavbar() {
   const { navbarHeight } = useContext(AppContext)
